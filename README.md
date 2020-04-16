@@ -38,12 +38,12 @@ Docker Support
 cd express-es6-rest-api
 
 # Build your docker
-docker build -t es6/api-service .
+docker build -t pransdell/node-object-detection .
 #            ^      ^           ^
 #          tag  tag name      Dockerfile location
 
 # run your docker
-docker run -p 8080:8080 es6/api-service
+docker run -p 4000:8080 -d pransdell/node-object-detection
 #                 ^            ^
 #          bind the port    container tag
 #          to your host
